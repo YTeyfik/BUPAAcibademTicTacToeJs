@@ -66,6 +66,7 @@ window.addEventListener('load',() => {
         if (wonRound) {
             announce(currPlayer === 'X' ? playerX : playerO)
             onGame = false
+            return
         }
         if (!board.includes('')) announce(tie)
 
